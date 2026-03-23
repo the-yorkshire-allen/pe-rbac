@@ -1,7 +1,7 @@
 forge 'https://forge.puppet.com'
 
 mod 'conductor-rbac',
-  git:         'git@github.com:the-yorkshire-allen/conductor-rbac.git'
+  git:         'git@github.com:the-yorkshire-allen/conductor-rbac.git',
   private_key: '/etc/puppetlabs/keys/r10k-deploy-key.pem'
 
 # Modules from the Puppet Forge
