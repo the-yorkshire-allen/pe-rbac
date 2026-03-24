@@ -39,10 +39,10 @@
 # @param group_lookup_attr
 #   SAML attribute used to populate group membership.
 class profile::mocksaml (
-  String $display_name = 'MockSAML Test Identity Provider',
-  String $idp_sso_url = 'https://mocksaml.com/api/saml/sso',
-  String $idp_slo_url = 'https://mocksaml.com/api/saml/sso',
-  String $idp_entity_id = 'https://saml.example.com/entityid',
+  String $display_name = '',
+  String $idp_sso_url = '',
+  String $idp_slo_url = '',
+  String $idp_entity_id = '',
   Optional[Array[String]] $idp_certificate = undef,
   Boolean $want_messages_signed = true,
   Boolean $want_assertions_signed = true,
