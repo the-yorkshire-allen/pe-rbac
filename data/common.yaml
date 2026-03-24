@@ -2,30 +2,45 @@
 message: "This node is using common data"
 
 
-profile::mocksaml::display_name: 'MockSAML Test Identity Provider'
-profile::mocksaml::idp_sso_url: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/SSOService.php'
-profile::mocksaml::idp_slo_url: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/SingleLogoutService.php'
-profile::mocksaml::idp_entity_id: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/metadata.php'
+profile::mocksaml::display_name: 'IDP Provider Container'
+profile::mocksaml::idp_sso_url: 'https://dev-lxc.local:10443/sso/module.php/saml/idp/singleSignOnService'
+profile::mocksaml::idp_slo_url: 'https://dev-lxc.local:10443/sso/module.php/saml/idp/singleLogout'
+profile::mocksaml::idp_entity_id: 'mock-saml2-idp'
 profile::mocksaml::idp_certificate: 
   - |
     -----BEGIN CERTIFICATE-----
-    MIIC4jCCAcoCCQC33wnybT5QZDANBgkqhkiG9w0BAQsFADAyMQswCQYDVQQGEwJV
-    SzEPMA0GA1UECgwGQm94eUhRMRIwEAYDVQQDDAlNb2NrIFNBTUwwIBcNMjIwMjI4
-    MjE0NjM4WhgPMzAyMTA3MDEyMTQ2MzhaMDIxCzAJBgNVBAYTAlVLMQ8wDQYDVQQK
-    DAZCb3h5SFExEjAQBgNVBAMMCU1vY2sgU0FNTDCCASIwDQYJKoZIhvcNAQEBBQAD
-    ggEPADCCAQoCggEBALGfYettMsct1T6tVUwTudNJH5Pnb9GGnkXi9Zw/e6x45DD0
-    RuRONbFlJ2T4RjAE/uG+AjXxXQ8o2SZfb9+GgmCHuTJFNgHoZ1nFVXCmb/Hg8Hpd
-    4vOAGXndixaReOiq3EH5XvpMjMkJ3+8+9VYMzMZOjkgQtAqO36eAFFfNKX7dTj3V
-    pwLkvz6/KFCq8OAwY+AUi4eZm5J57D31GzjHwfjH9WTeX0MyndmnNB1qV75qQR3b
-    2/W5sGHRv+9AarggJkF+ptUkXoLtVA51wcfYm6hILptpde5FQC8RWY1YrswBWAEZ
-    NfyrR4JeSweElNHg4NVOs4TwGjOPwWGqzTfgTlECAwEAATANBgkqhkiG9w0BAQsF
-    AAOCAQEAAYRlYflSXAWoZpFfwNiCQVE5d9zZ0DPzNdWhAybXcTyMf0z5mDf6FWBW
-    5Gyoi9u3EMEDnzLcJNkwJAAc39Apa4I2/tml+Jy29dk8bTyX6m93ngmCgdLh5Za4
-    khuU3AM3L63g7VexCuO7kwkjh/+LqdcIXsVGO6XDfu2QOs1Xpe9zIzLpwm/RNYeX
-    UjbSj5ce/jekpAw7qyVVL4xOyh8AtUW1ek3wIw1MJvEgEPt0d16oshWJpoS1OT8L
-    r/22SvYEo3EmSGdTVGgk3x3s+A0qWAqTcyjr7Q4s/GKYRFfomGwz0TZ4Iw1ZN99M
-    m0eo2USlSRTVl7QHRTuiuSThHpLKQQ==
+    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
     -----END CERTIFICATE-----
+
 
 puppet_enterprise::profile::console::saml_host: 'dev-lxc.local'
 puppet_enterprise::profile::console::saml_port: 9443
