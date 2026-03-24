@@ -41,6 +41,6 @@ profile::mocksaml::idp_certificate:
     kfz5N4ZCZnF33LiswAvcJEdLw/C4MhgX3SDlOvSJ65+b834iHxoc1PwVFw3b
     -----END CERTIFICATE-----
 
-puppet_enterprise::profile::console::saml_host: 'dev-lxc.local'
+puppet_enterprise::profile::console::saml_host: 'localhost'
 puppet_enterprise::profile::console::saml_port: 9443
 
