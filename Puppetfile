@@ -2,7 +2,7 @@ forge 'https://forge.puppet.com'
 
 mod 'conductor-rbac',
   git:    'git@github.com:the-yorkshire-allen/conductor-rbac.git',
-  branch: 'production'
+  branch: 'main'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
