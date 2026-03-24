@@ -27,3 +27,6 @@ profile::mocksaml::idp_certificate:
     m0eo2USlSRTVl7QHRTuiuSThHpLKQQ==
     -----END CERTIFICATE-----
 
+puppet_enterprise::profile::console::saml_host: 'dev-lxc.local'
+puppet_enterprise::profile::console::saml_port: 9443
+
