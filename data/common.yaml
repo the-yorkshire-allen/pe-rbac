@@ -3,9 +3,9 @@ message: "This node is using common data"
 
 
 profile::mocksaml::display_name: 'MockSAML Test Identity Provider'
-profile::mocksaml::idp_sso_url: 'https://idpprovider:10443/simplesaml/saml2/idp/SSOService.php'
-profile::mocksaml::idp_slo_url: 'https://idpprovider:10443/simplesaml/saml2/idp/SingleLogoutService.php'
-profile::mocksaml::idp_entity_id: 'https://idpprovider:10443/simplesaml/saml2/idp/metadata.php'
+profile::mocksaml::idp_sso_url: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/SSOService.php'
+profile::mocksaml::idp_slo_url: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/SingleLogoutService.php'
+profile::mocksaml::idp_entity_id: 'https://dev-lxc.local:10443/simplesaml/saml2/idp/metadata.php'
 profile::mocksaml::idp_certificate: 
   - |
     -----BEGIN CERTIFICATE-----
