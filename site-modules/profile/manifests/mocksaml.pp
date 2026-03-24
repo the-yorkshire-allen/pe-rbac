@@ -90,3 +90,4 @@ class profile::mocksaml (
     user_display_name_attr             => $user_display_name_attr,
     group_lookup_attr                  => $group_lookup_attr,
   }
+}
