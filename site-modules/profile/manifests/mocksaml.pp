@@ -38,7 +38,7 @@
 #
 # @param group_lookup_attr
 #   SAML attribute used to populate group membership.
-class conductor_rbac::profile::mocksaml (
+class profile::mocksaml (
   String $display_name = 'MockSAML Test Identity Provider',
   String $idp_sso_url = 'https://mocksaml.com/api/saml/sso',
   String $idp_entity_id = 'https://saml.example.com/entityid',
