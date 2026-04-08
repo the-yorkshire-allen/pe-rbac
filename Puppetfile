@@ -14,7 +14,9 @@ mod 'paw_ansible_role_docker',
 
 mod 'puppet-par',
   git:    'git@github.com:garrettrowell/puppet-par.git',
-  branch: 'main'
+  branch: 'feature/function-based-inventory-v0.3.0'
+
+mod 'puppetlabs/stdlib',  '9.7.0'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
