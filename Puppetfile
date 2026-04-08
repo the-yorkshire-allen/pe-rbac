@@ -4,6 +4,14 @@ mod 'conductor-rbac',
   git:    'git@github.com:the-yorkshire-allen/conductor-rbac.git',
   branch: 'main'
 
+mod 'paw_ansible_role_apache',
+  git:    'git@github.com:puppet-ansible/paw_ansible_role_apache.git',
+  branch: 'main'
+
+mod 'paw_ansible_role_docker',
+  git:    'git@github.com:puppet-ansible/paw_ansible_role_docker.git',
+  branch: 'main'
+
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
 #mod 'puppetlabs/inifile', '5.0.1'
